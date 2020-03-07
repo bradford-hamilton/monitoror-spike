@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "columns": 3,
+  "rows": 3,
+  "tiles": [
+    {
+      "type": "TRAVISCI-BUILD",
+      "rowSpan": 2,
+      "params": {
+        "owner": "bradford-hamilton",
+        "repository": "monkey-lang",
+        "branch": "master"
+      }
+    },
+    {
+      "type": "GITHUB-COUNT",
+      "rowSpan": 2,
+      "label": "monkey-lang open issues",
+      "params": {
+        "query": "is:issue is:open repo:bradford-hamilton/monkey-lang"
+      }
+    },
+    {
+      "type": "GITHUB-CHECKS",
+      "rowSpan": 2,
+      "label": "monkey-lang master build checks",
+      "params": {
+        "owner": "bradford-hamilton",
+        "repository": "monkey-lang",
+        "ref": "master"
+      }
+    },
+    {
+      "type": "GITHUB-PULLREQUESTS",
+      "rowSpan": 2,
+      "label": "monkey-lang open PRs",
+      "params": {
+        "owner": "bradford-hamilton",
+        "repository": "monkey-lang"
+      }
+    }
+  ]
+}
